@@ -1,4 +1,4 @@
-import { Flex, Text, useColorMode } from '@chakra-ui/react'
+import { Flex, useColorMode } from '@chakra-ui/react'
 
 const Copyright = () => {
   const { colorMode } = useColorMode()
@@ -11,9 +11,7 @@ const Copyright = () => {
       lineHeight="2.4rem"
       color={isDarkTheme ? 'white' : 'dark'}
       gap={2}
-    >
-      <text></text>
-    </Flex>
+    ></Flex>
   )
 }
 
