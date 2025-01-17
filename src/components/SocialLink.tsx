@@ -1,20 +1,20 @@
-import type { IconType } from 'react-icons'
+import type { FC } from 'react'
 
 import { Icon, Link, useColorMode } from '@chakra-ui/react'
 
 export type SocialLinkProps = {
   href: string
-  icon: IconType
+  icon: React.ComponentType | FC
 }
 
-const SocialLink = ({ href, icon }: SocialLinkProps) => {
+const SocialLink = ({ href, icon: IconComponent }: SocialLinkProps) => {
   const { colorMode } = useColorMode()
   const isDarkTheme = colorMode === 'dark'
 
   return (
     <Link href={href} isExternal rel="noreferrer">
       <Icon
-        as={icon}
+        as={IconComponent}
         color={isDarkTheme ? 'white' : 'black'}
         w="2.4rem"
         h="2.4rem"

@@ -12,10 +12,7 @@ const Copyright = () => {
       color={isDarkTheme ? 'white' : 'dark'}
       gap={2}
     >
-      <Text>Made with ♥ by</Text>
-      <Text textDecoration="underline" textUnderlineOffset="0.5rem">
-        Marcos Mendes
-      </Text>
+      <text></text>
     </Flex>
   )
 }

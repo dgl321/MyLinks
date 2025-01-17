@@ -13,15 +13,12 @@ const Main = () => (
   <Wrapper>
     <VStack w="100%">
       <Box mt="4rem" mb="1rem" aria-label="Perfil">
-        <Profile
-          name="Marcos Mendes"
-          photoUrl="https://github.com/iamdevmarcos.png"
-        />
+        <Profile name="Dylan Grimes Larkin" photoUrl="/profile.jpeg" />
       </Box>
 
       <SwitchTheme />
 
-      <VStack aria-label="Lista de Links" p="2.4rem" gap="1.6rem" maxW="100%">
+      <VStack aria-label="List of links" p="2.4rem" gap="1.6rem" maxW="100%">
         {externalLinks.map(({ title, href }, index) => (
           <Link key={index} title={title} href={href} />
         ))}
