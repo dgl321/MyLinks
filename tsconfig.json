@@ -1,31 +1,32 @@
 {
   "compilerOptions": {
-    "baseUrl": "src", // Base path for resolving modules
-    "target": "es6", // Use ES6 for modern features
-    "lib": ["dom", "dom.iterable", "esnext"], // Include DOM and modern JS
-    "allowJs": true, // Allow JavaScript files
-    "skipLibCheck": true, // Skip type checking of declaration files
-    "strict": true, // Enable strict type checking
-    "forceConsistentCasingInFileNames": true, // Enforce consistent casing in imports
-    "noEmit": true, // Prevent emitting compiled files
-    "esModuleInterop": true, // Enable interop for CommonJS modules
-    "module": "esnext", // Use ESNext module resolution
-    "moduleResolution": "node", // Resolve modules like Node.js
-    "resolveJsonModule": true, // Allow importing JSON files
-    "isolatedModules": true, // Ensure each file can be transpiled in isolation
-    "jsx": "preserve", // Preserve JSX for Next.js processing
-    "incremental": true, // Enable incremental compilation
-    "paths": {
-      "@/*": ["./*"] // Alias `@` to the base `src` directory
-    }
+    "baseUrl": "src",
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true
   },
   "exclude": [
-    "node_modules", // Exclude node_modules directory
-    "**/*.test.tsx" // Exclude test files
+    "node_modules",
+    "**/*.test.tsx"
   ],
   "include": [
-    "next-env.d.ts", // Include Next.js environment types
-    "**/*.ts", // Include TypeScript files
-    "**/*.tsx" // Include TypeScript JSX files
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
   ]
 }
