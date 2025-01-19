@@ -13,5 +13,5 @@ export const socialLinks: SocialLinkProps[] = [
   },
   { href: 'https://www.instagram.com/dylangrimesxo/', icon: FiInstagram },
   { href: 'https://github.com/dgl321', icon: AiFillGithub },
-  { href: 'mailto:dylangrimeslarkin@gmail.com', icon: MdEmail }
+  { href: 'https://dylangl.netlify.app/contact', icon: MdEmail }
 ]
